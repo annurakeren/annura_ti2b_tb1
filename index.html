@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Tugas Besar 1 PWD - Annura's Profile</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        a {
+            color: var(--deep-rose);
+            text-decoration: none;
+        }
+        a:hover {
+            color: rgb(207, 16, 99);
+            text-decoration: underline;
+        }
+        h2 {
+            color: var(--deep-rose);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--deep-rose);
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            color: var(--deep-rose);
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--deep-rose);
+            border-radius: 4px;
+            background-color: #fbd8e496;
+        }
+        textarea {
+            resize: none;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: var(--deep-rose);
+            color: var(--lavender);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color:rgb(207, 16, 99);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 style="font-size: x-large;">Annura's Profile</h1>
+    </header>
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="nav-menu">
+            <ul>
+                <li><a href="index.html">Profile</a></li>
+                <li><a href="fam.html">Keluarga</a></li>
+                <li><a href="friends.html">Teman</a></li>
+                <li><a href="hobby.html">Hobi</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="welcome-section">
+            <img src="avatar.jpg" alt="Foto Profil Annura Rizkya Chantika" class="profile-img">
+            <div class="welcome-text">
+                <h2>Hi, Welcome to My Page!</h2>
+                <p style="text-align: justify;">
+                    Halo Semuanya, Nama saya <a href="https://www.instagram.com/rizkyachantika/" target="_blank">Annura Rizkya Chantika</a> 
+                    Saya dilahirkan pada 22 Juli 2006 di <a href="https://id.wikipedia.org/wiki/Banda_Aceh" target="_blank">Banda Aceh.</a>
+                    Namun sekarang ini saya dan Kelarga menetap di Jakarta Utara. Saya merupakan anak ke-2 dari 4 bersaudara. 
+                    Tujuan saya membuat Web ini adalah untuk memenuhi Tugas Besar 1 Matkul Pemograman Web Dasar yang di ampu oleh 
+                    <a href="https://id.linkedin.com/in/mera-kartika-delimayanti-913ba38b">Ibu Mera Kartika Delimayanti, S.Kom.</a> 
+                    saya sendiri adalah mahasiswi dari kelas <a href="https://www.instagram.com/t1blast/" target="_blank">Teknik Informatika 2B</a>
+                </p>
+            </div>
+        </section>
+        <section class="table-riwayat">
+            <h2>Riwayat Pendidikan</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tahun</th>
+                        <th>Nama Sekolah</th>
+                        <th>Jurusan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2012 - 2018</td>
+                        <td>SD Muhammadiyah 1 Jakarta</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>2018 - 2021</td>
+                        <td>SMP Al Minhaj Tamansari Bogor</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>2021 - 2022</td>
+                        <td>SMA Al Minhaj Tamansari Bogor</td>
+                        <td>MIPA</td>
+                    </tr>
+                    <tr>
+                        <td>2022 - 2024</td>
+                        <td>SMAN 114 Jakarta Utara</td>
+                        <td>MIPA</td>
+                    </tr>
+                    <tr>
+                        <td>2024 - Sekarang</td>
+                        <td>Politeknik Negri Jakarta</td>
+                        <td>Teknik Informatika</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="quick-info">
+            <div class="info-card">
+                <h2>Kontak Kami</h2>
+                <form action="annura.rizkya.chantika.tik24@stu.pnj.ac.id" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Nama:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Kirim Pesan</button>
+                </form>     
+                <br>
+                <br>      
+                <a href="https://www.pnj.ac.id/" target="_blank">
+                    <img src="pnj.jpg" alt="Logo Politeknik Negeri Jakarta" class="logo">
+                </a>
+                <h3>Politeknik Negeri Jakarta | Jurusan Teknik Informatika dan Komputer</h3>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Annura Rizkya Chantika. All rights reserved.</p>
+    </footer>
+</body>
+</html>

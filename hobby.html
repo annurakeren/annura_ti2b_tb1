@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Hobby TB 1 PWD</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .gallery-section {
+            display: none;
+            flex-basis: 100%;
+        }
+
+        .gallery-section.active {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            margin: 10px;
+            flex-basis: 300px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height:100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+  
+        .filter-buttons {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .btn {
+            border: none;
+            outline: none;
+            padding: 12px 16px;
+            background-color: var(--lavender);
+            cursor: pointer;
+            margin: 5px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .btn.active {
+            background-color: var(--pastel-pink);
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 style="font-size: x-large;">Annura's Fave Thing To Do</h1>
+    </header>
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="nav-menu">
+            <ul>
+                <li><a href="index.html">Profile</a></li>
+                <li><a href="fam.html">Keluarga</a></li>
+                <li><a href="friends.html">Teman</a></li>
+                <li><a href="hobby.html">Hobi</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="filter-buttons">
+        <button class="btn active" data-category="mam">Foods</button>
+        <button class="btn" data-category="movies">Movies</button>
+        <button class="btn" data-category="makeup">Makeup</button>
+    </div>
+    
+    <div class="gallery-container">
+        <div id="mam" class="gallery-section active">
+            <div class="gallery-item">
+                <img src="hobbygallery/mam/mamam (1).jpg" alt="makanan 1">
+            </div>
+            <div class="gallery-item">
+                <img src="hobbygallery/mam/mamam (2).jpg" alt="makanan 2">
+            </div>
+            <div class="gallery-item">
+                <img src="hobbygallery/mam/mamam (3).jpg" alt="makanan 3">
+            </div>
+            <div class="gallery-item">
+                <img src="hobbygallery/mam/mamam (4).jpg" alt="makanan 4">
+            </div>
+            <div class="gallery-item">
+                <img src="hobbygallery/mam/mamam (5).jpg" alt="makanan 5">
+            </div>
+            <div class="gallery-item">
+                <img src="hobbygallery/mam/mamam (6).jpg" alt="makanan 6">
+            </div>
+            <div class="gallery-item">
+                <img src="hobbygallery/mam/mamam (7).jpg" alt="makanan 7">
+            </div>
+            <div class="gallery-item">
+                <img src="hobbygallery/mam/mamam (8).jpg" alt="makanan 8">
+            </div>
+        </div>
+
+        <div id="movies" class="gallery-section">
+            <div class="gallery-item">
+                <img src="hobbygallery/MOVIESSS/movie (1).jpg" alt="Movie 1">
+            </div>
+            <div class="gallery-item">
+                <img src="hobbygallery/MOVIESSS/movie (2).jpg" alt="Movie 2">
+            </div>
+            <div class="gallery-item">
+                <img src="hobbygallery/MOVIESSS/movie (3).jpg" alt="Movie 3">
+            </div>
+            <div class="gallery-item">
+                <img src="hobbygallery/MOVIESSS/movie (4).jpg" alt="Movie 4">
+            </div>
+            <div class="gallery-item">
+                <img src="hobbygallery/MOVIESSS/movie (5).jpg" alt="Movie 5">
+            </div>
+            <div class="gallery-item">
+                <img src="hobbygallery/MOVIESSS/movie (6).jpg" alt="Movie 6">
+            </div>
+            <div class="gallery-item">
+                <img src="hobbygallery/MOVIESSS/movie (7).jpg" alt="Movie 7">
+            </div>
+            <div class="gallery-item">
+                <img src="hobbygallery/MOVIESSS/movie (8).jpg" alt="Movie 8">
+            </div>
+            <div class="gallery-item">
+                <img src="hobbygallery/MOVIESSS/movie (9).jpg" alt="Movie 9">
+            </div>
+            <div class="gallery-item">
+                <img src="hobbygallery/MOVIESSS/movie (10).jpg" alt="Movie 10">
+            </div>
+            <div class="gallery-item">
+                <img src="hobbygallery/MOVIESSS/movie (11).jpg" alt="Movie 11">
+            </div>
+            <div class="gallery-item">
+                <img src="hobbygallery/MOVIESSS/movie (12).jpg" alt="Movie 12">
+            </div>
+        </div>
+        
+        <div id="makeup" class="gallery-section">
+            <div class="gallery-item">
+                <img src="hobbygallery/MAKEUP/makeup (1).jpg" alt="Makeup 1">
+            </div>
+            <div class="gallery-item">
+                <img src="hobbygallery/MAKEUP/makeup (2).jpg" alt="Makeup 2">
+            </div>
+            <div class="gallery-item">
+                <img src="hobbygallery/MAKEUP/makeup (3).jpg" alt="Makeup 3">
+            </div>
+            <div class="gallery-item">
+                <img src="hobbygallery/MAKEUP/makeup (4).jpg" alt="Makeup 4">
+            </div>
+            <div class="gallery-item">
+                <img src="hobbygallery/MAKEUP/makeup (5).jpg" alt="Makeup 5">
+            </div>
+            <div class="gallery-item">
+                <img src="hobbygallery/MAKEUP/makeup (6).jpg" alt="Makeup 6">
+            </div>
+            <div class="gallery-item">
+                <img src="hobbygallery/MAKEUP/makeup (7).jpg" alt="Makeup 7">
+            </div>
+        </div>
+    </div>
+
+    <script>
+       document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.btn');
+            const sections = document.querySelectorAll('.gallery-section');
+            
+            function activateSection(category) {
+                sections.forEach(section => {
+                    section.classList.remove('active');
+                    if(section.id === category) {
+                        section.classList.add('active');
+                    }
+                });
+                
+                buttons.forEach(btn => {
+                    btn.classList.remove('active');
+                    if(btn.dataset.category === category) {
+                        btn.classList.add('active');
+                    }
+                });
+            }
+            
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const category = button.dataset.category;
+                    activateSection(category);
+                });
+            });
+            
+            activateSection('mam');
+        });
+    </script>
+
+    <footer class="footer">
+        <p>&copy; 2024 Annura Rizkya Chantika. All rights reserved.</p>
+    </footer>
+</body>
+</html>
